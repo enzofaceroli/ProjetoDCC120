@@ -4,14 +4,15 @@ Projeto de "Water Sort Puzzle" em C para a disciplina DCC120 UFJF, utilizando ap
 # O Código 
 
 * IMPORTANTE: As bibliotecas "unistd.h" e "Windows.h" foram utilizadas apenas para propósitos estéticos, não interferindo na jogabilidade. 
+* Foram utilizadas 8 funções além da main. 
 * Main: 
   - 1. Gera potes em configuração 'perfeita'. Os potes são matrizes de 7 linhas por 4 colunas.
   - 2. Define a primeira fase (1). 
-  - 3. Mostra a tela inicial por 5 segundos. 
-  - 4. Mostra as instruções até que o usuario aperte uma tecla. 
+  - 3. Mostra a tela inicial por 5 segundos atráves da função 'tela'. 
+  - 4. Mostra as instruções, através da função 'instrucoes', até que o usuario aperte uma tecla. 
   - 5. Utiliza da função srand. 
-  - 6. Usa um loop para gerar os potes, com um loop do jogo dentro. 
-  - 7. Mostra a tela final. 
+  - 6. Usa um loop para gerar os potes ('gerarPotes'), com um loop do jogo dentro. 
+  - 7. Mostra a tela final, através da função 'telaFinal'. 
 -----
 
 * Funcões: 
