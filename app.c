@@ -65,20 +65,20 @@ void gerarPotes(int potes[7][4], int tirar, int colocar, int aux, int fase)
         {
             if (checarStatus(potes, colocar) < 4 && checarStatus(potes, tirar) != 0)
             {
-                for (int i = 0; i < 7; i++)
+                for (int j = 0; j < 7; j++)
                 {
-                    if (potes[tirar - 1][i] != 0)
+                    if (potes[tirar - 1][j] != 0)
                     {
-                        aux = potes[tirar - 1][i];
-                        potes[tirar - 1][i] = 0;
+                        aux = potes[tirar - 1][j];
+                        potes[tirar - 1][j] = 0;
                         break;
                     }
                 }
-                for (int i = 3; i >= 0; i--)
+                for (int z = 3; z >= 0; z--)
                 {
-                    if (potes[colocar - 1][i] == 0)
+                    if (potes[colocar - 1][z] == 0)
                     {
-                        potes[colocar - 1][i] = aux;
+                        potes[colocar - 1][z] = aux;
                         break;
                     }
                 }
